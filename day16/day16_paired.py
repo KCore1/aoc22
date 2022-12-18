@@ -1,4 +1,4 @@
-# Pair programming with Garrett Moody
+# Pair programming with Garrett Moody. This worked for my input but not for his.
 
 from helper_functions import *
 import multiprocessing as mp
