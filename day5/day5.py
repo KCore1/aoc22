@@ -29,8 +29,14 @@ for line in f:
     line = line.split()
     to_move, stack1, stack2 = [int(x) for x in line if x.isdigit()]
     
+    # for part 2
+    in_transit = []
     for _ in range(to_move):
         n = stacks[stack1 - 1].pop()
+        in_transit.append(n)
+    
+    in_transit = in_transit[::-1]
+    for n in in_transit:
         stacks[stack2 - 1].append(n)
 
 for stack in stacks:
